@@ -1,9 +1,9 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css';
+@import '../../node_modules/normalize.css/normalize';
 
 html {
   box-sizing: border-box;
-  height: 100%;
   font-family: sans-serif;
+  height: 100%;
 }
 
 *,
@@ -18,7 +18,7 @@ body {
 }
 
 :focus {
-	outline: 0;
+  outline-width: 0;
 }
 
 h1,
@@ -31,8 +31,8 @@ p,
 pre,
 ul,
 dl {
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 img {
@@ -47,21 +47,19 @@ a {
 
 ol,
 ul {
-  padding-left: 0;
   list-style-type: none;
+  padding-left: 0;
 }
 
-/*
- * padding e border ficam para serem sobrescritos pelo estilo
- */
+// padding e border ficam para serem sobrescritos pelo estilo
 fieldset {
   margin-left: 0;
   margin-right: 0;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 th {
@@ -74,6 +72,6 @@ dd {
 }
 
 textarea {
-  vertical-align: top;
   resize: vertical;
+  vertical-align: top;
 }
