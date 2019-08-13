@@ -40,7 +40,6 @@ form {
 }
 
 img {
-  max-width: 100%;
   vertical-align: middle;
 }
 
@@ -78,4 +77,24 @@ dd {
 textarea {
   resize: vertical;
   vertical-align: top;
+}
+
+%full-width {
+  width: 100%;
+}
+
+button,
+img,
+textarea {
+  @extend %full-width;
+}
+
+input {
+  &:not([type='checkbox']) {
+    &:not([type='file']) {
+      &:not([type='radio']) {
+        @extend %full-width;
+      }
+    }
+  }
 }
