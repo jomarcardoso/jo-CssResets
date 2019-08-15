@@ -79,21 +79,24 @@ textarea {
   vertical-align: top;
 }
 
-%full-width {
-  width: 100%;
+%block {
+  display: block;
 }
 
-button,
 img,
 textarea {
-  @extend %full-width;
+  @extend %block;
 }
 
 input {
   &:not([type='checkbox']) {
     &:not([type='file']) {
       &:not([type='radio']) {
-        @extend %full-width;
+        &:not([type='button']) {
+          &:not([type='submit']) {
+            @extend %block;
+          }
+        }
       }
     }
   }
