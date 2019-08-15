@@ -1,0 +1,28 @@
+@import 'resets';
+
+%full-width {
+  width: 100%;
+
+  @supports (width: fill-available) {
+    width: fill-available;
+  }
+}
+
+img,
+textarea {
+  @extend %full-width;
+}
+
+input {
+  &:not([type='checkbox']) {
+    &:not([type='file']) {
+      &:not([type='radio']) {
+        &:not([type='button']) {
+          &:not([type='submit']) {
+            @extend %full-width;
+          }
+        }
+      }
+    }
+  }
+}

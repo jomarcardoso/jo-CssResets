@@ -74,26 +74,3 @@ textarea {
   resize: vertical;
   vertical-align: top;
 }
-
-%full-width {
-  width: 100%;
-}
-
-img,
-textarea {
-  @extend %full-width;
-}
-
-input {
-  &:not([type='checkbox']) {
-    &:not([type='file']) {
-      &:not([type='radio']) {
-        &:not([type='button']) {
-          &:not([type='submit']) {
-            @extend %full-width;
-          }
-        }
-      }
-    }
-  }
-}
