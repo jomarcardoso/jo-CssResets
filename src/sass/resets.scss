@@ -75,13 +75,13 @@ textarea {
   vertical-align: top;
 }
 
-%block {
-  display: block;
+%full-width {
+  width: 100%;
 }
 
 img,
 textarea {
-  @extend %block;
+  @extend %full-width;
 }
 
 input {
@@ -90,7 +90,7 @@ input {
       &:not([type='radio']) {
         &:not([type='button']) {
           &:not([type='submit']) {
-            @extend %block;
+            @extend %full-width;
           }
         }
       }

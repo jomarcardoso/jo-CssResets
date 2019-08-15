@@ -77,7 +77,7 @@ Used to run the project
 
 ## Release
 
-What the news and how upgrade to the new version.
+[https://bitsofco.de/a-look-at-css-resets-in-2018/](https://bitsofco.de/a-look-at-css-resets-in-2018/)
 
 ## Learning
 
