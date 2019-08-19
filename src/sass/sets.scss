@@ -1,4 +1,4 @@
-@import 'resets';
+@import 'common';
 
 %full-width {
   width: 100%;
@@ -25,4 +25,14 @@ input {
       }
     }
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
