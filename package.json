@@ -1,6 +1,6 @@
 {
   "name": "jo-cssresets",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Default resets with normalize.css.",
   "main": "./dist/css/sets.css",
   "scripts": {
