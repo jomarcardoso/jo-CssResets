@@ -1,0 +1,1 @@
+{"version":3,"file":"../resets.amp.css","sources":["resets.amp.scss"],"sourcesContent":["amp-img {\n  vertical-align: middle;\n}\n"],"names":[],"mappings":"AAAA,AAAA,OAAO,AAAC,CACN,cAAc,CAAE,MAAM,CACvB"}
