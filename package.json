@@ -1,6 +1,6 @@
 {
   "name": "jo-cssresets",
-  "version": "6.3.3",
+  "version": "6.4.0",
   "description": "Default resets with normalize.css.",
   "main": "./dist/css/resets.css",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/jomarcardoso/jo-CssResets#readme",
   "dependencies": {
-    "normalize.css": "^8.1.0"
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
