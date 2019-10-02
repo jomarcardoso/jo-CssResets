@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/jomarcardoso/jo-CssResets#readme",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.1.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

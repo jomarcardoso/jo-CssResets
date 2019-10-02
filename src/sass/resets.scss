@@ -53,10 +53,11 @@ ul {
   padding-left: 0;
 }
 
-// padding e border ficam para serem sobrescritos pelo estilo
 fieldset {
   margin-left: 0;
   margin-right: 0;
+  border: 0;
+  padding: 0;
 }
 
 table {
