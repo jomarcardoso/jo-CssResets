@@ -1,6 +1,6 @@
 {
   "name": "jo-cssresets",
-  "version": "6.6.0",
+  "version": "6.7.0",
   "description": "Default resets with normalize.css.",
   "main": "./dist/css/resets.css",
   "scripts": {
@@ -21,11 +21,17 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sass-lint": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.12.0",
     "sass-lint": "^1.13.1"
   },
-  "sasslintConfig": "./.scss-lint.yml"
+  "sasslintConfig": "./.scss-lint.yml",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ]
 }
