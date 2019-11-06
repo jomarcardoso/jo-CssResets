@@ -1,5 +1,46 @@
 @import '../../node_modules/normalize.css/normalize';
 
+%font-weight__inherit {
+  font-weight: inherit;
+}
+
+%text__improve {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+%full-width {
+  width: 100%;
+}
+
+%margin__zero {
+  margin: 0;
+}
+
+%margin-left__zero {
+  margin-left: 0;
+}
+
+%margin-bottom__zero {
+  margin-bottom: 0;
+}
+
+%margin-left-right__zero {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+%margin-top-bottom__zero {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+html,
+body {
+  overflow-x: auto;
+}
+
 html {
   box-sizing: border-box;
   display: flex;
@@ -14,39 +55,26 @@ html {
   box-sizing: inherit;
 }
 
-body,
 figure {
-  margin: 0;
+  @extend %margin__zero;
 }
 
 body {
+  @extend %margin__zero;
   flex: 1;
   min-height: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  @extend %text__improve;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 pre,
 ul,
 dl {
-  margin-bottom: 0;
-  margin-top: 0;
+  @extend %margin-top-bottom__zero;
 }
 
 form {
-  margin-bottom: 0;
-}
-
-img {
-  vertical-align: middle;
+  @extend %margin-bottom__zero;
 }
 
 a {
@@ -62,8 +90,7 @@ ul {
 
 fieldset {
   border: 0;
-  margin-left: 0;
-  margin-right: 0;
+  @extend %margin-left-right__zero;
   padding: 0;
 }
 
@@ -73,27 +100,22 @@ table {
 }
 
 th {
-  font-weight: normal;
+  @extend %font-weight__inherit;
   text-align: left;
 }
 
 dd {
-  margin-left: 0;
+  @extend %margin-left__zero;
 }
 
 textarea {
   resize: vertical;
   vertical-align: top;
+  @extend %full-width;
 }
 
-// sets
-
-%full-width {
-  width: 100%;
-}
-
-img,
-textarea {
+img {
+  vertical-align: middle;
   @extend %full-width;
 }
 
@@ -118,7 +140,8 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: inherit;
+  @extend %font-weight__inherit;
+  @extend %margin-top-bottom__zero;
 }
 
 label {
