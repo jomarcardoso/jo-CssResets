@@ -10,11 +10,18 @@ yarn add jo-cssresets
 ```
 
 #### Uso
-....
 
-## Core components
+```scss
+@import '/node_modules/jo-cssresets/dist/css/resets';
+```
 
-- [resets.css](assets/css/resets.css)
+ou
+
+```scss
+@import '/node_modules/jo-cssresets/dist/css/resets.amp';
+```
+
+para páginas AMP.
 
 ## Dependencies
 
@@ -23,70 +30,18 @@ yarn add jo-cssresets
 
 ----
 
+## Releases
 
-### Example
-
-**Installation**
-
-Scritp tag
-```html
-<script src="..."></script>
-```
-
-NodeJs
-```
-npm install module-name --save
-```
-or
-```
-yarn add module-name
-```
-
-ES6 Module
-```javascript
-import module from 'module-name';
-```
-
-CommonJs
-```js
-const module = require('module-name');
-```
-
-AMD (Asynchronous Module Definition)
-```js
-define(['module-name'], (module) => {
-
-});
-```
-
-## Dependencies
-
-Used on runtime.
-
-### Exemple
-- jquery
-- react
-
-## Development dependencies
-
-Used to run the project
-
-**Example:**
-- http-server
-- gulp
-
-## Release
-
-[https://bitsofco.de/a-look-at-css-resets-in-2018/](https://bitsofco.de/a-look-at-css-resets-in-2018/)
+...
 
 ## Learning
 
 What help the user like "Getting Started" or "Example Usage"
 
-## References
+## Referências
 
-Nothing is created, everything is copied... But tell where you copied.
+- [https://bitsofco.de/a-look-at-css-resets-in-2018/](https://bitsofco.de/a-look-at-css-resets-in-2018/)
 
 ## Keywords
 
-What would you like to be found in?
+css, resets, amp,

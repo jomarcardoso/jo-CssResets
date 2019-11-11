@@ -92,11 +92,11 @@ fieldset {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  @extend %full-width;
 }
 
 th {
   @extend %font-weight__inherit;
-  text-align: left;
 }
 
 dd {
@@ -114,17 +114,27 @@ img {
   @extend %full-width;
 }
 
+canvas {
+  @extend %full-width;
+}
+
 input {
-  &:not([type='checkbox']) {
-    &:not([type='file']) {
-      &:not([type='radio']) {
-        &:not([type='button']) {
-          &:not([type='submit']) {
-            @extend %full-width;
-          }
-        }
-      }
-    }
+  &[type='time'],
+  &[type='color'],
+  &[type='range'],
+  &[type='date'],
+  &[type='datetime'],
+  &[type='datetime-local'],
+  &[type='month'],
+  &[type='password'],
+  &[type='search'],
+  &[type='url'],
+  &[type='week'],
+  &[type='email'],
+  &[type='number'],
+  &[type='tel'],
+  &[type='text'] {
+    @extend %full-width;
   }
 }
 
