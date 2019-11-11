@@ -4,7 +4,8 @@
   "description": "Default resets with normalize.css.",
   "main": "./dist/css/resets.css",
   "scripts": {
-    "start": "yarn && gulp"
+    "start": "yarn && gulp",
+    "publicate": "surge ./dist jo-cssresets.surge.sh"
   },
   "repository": {
     "type": "git",
