@@ -1,5 +1,9 @@
 @import '../../node_modules/normalize.css/normalize';
 
+%text-align__inherit {
+  text-align: inherit;
+}
+
 %font-weight__inherit {
   font-weight: inherit;
 }
@@ -36,6 +40,10 @@
   margin-top: 0;
 }
 
+%color__inherit {
+  color: inherit;
+}
+
 html {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -58,6 +66,13 @@ body {
   @extend %text__improve;
 }
 
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  @extend %color__inherit;
+}
+
 p,
 pre,
 ul,
@@ -70,7 +85,7 @@ form {
 }
 
 a {
-  color: inherit;
+  @extend %color__inherit;
   text-decoration: none;
 }
 
@@ -81,9 +96,7 @@ ul {
 }
 
 fieldset {
-  border: 0;
   @extend %margin-left-right__zero;
-  padding: 0;
 }
 
 table {
@@ -93,7 +106,12 @@ table {
 }
 
 th {
+  @extend %text-align__inherit;
   @extend %font-weight__inherit;
+}
+
+caption {
+  @extend %text-align__inherit;
 }
 
 dd {
@@ -113,6 +131,11 @@ img {
 
 canvas {
   @extend %full-width;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
 }
 
 input {
