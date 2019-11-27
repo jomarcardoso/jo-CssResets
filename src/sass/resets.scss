@@ -91,6 +91,7 @@ a {
 
 ol,
 ul {
+  @extend %margin-top-bottom__zero;
   list-style-type: none;
   padding-left: 0;
 }
@@ -133,11 +134,6 @@ canvas {
   @extend %full-width;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  vertical-align: middle;
-}
-
 input {
   &[type='time'],
   &[type='color'],
@@ -167,10 +163,6 @@ h6 {
   font-size: inherit;
   @extend %font-weight__inherit;
   @extend %margin-top-bottom__zero;
-}
-
-label {
-  display: block;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jo - CSS Resets - Form</title>
+  <link rel="stylesheet" href="./css/resets.css">
+  <style>
+    .formgroup {
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+
+    .heading {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .fieldset {
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 480px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+
+    .radio,
+    .checkbox {
+      margin-right: 5px;
+    }
+
+    .legend {
+      padding: 0 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <form class="container" action="/">
+    <h1 class="heading">CADASTRO DE USUÁRIO</h1>
+    <fieldset class="fieldset">
+      <legend align="right" class="legend">Dados pessoais</legend>
+      <div class="formgroup">
+        <label class="label" for="" required>Nome</label>
+        <input type="text">
+      </div>
+      <div class="formgroup">
+        <label class="label" for="">Data de nascimento</label>
+        <input type="date">
+      </div>
+      <div class="formgroup">
+        <label for="" class="label">Telefone</label>
+        <input type="tel">
+      </div>
+      <div class="formgroup">
+        <div class="formgroup">
+          <label for="" class="label">
+            Estado civil
+          </label>
+        </div>
+        <label name="estado-civil" for="casado">casado</label>
+        <input id="casado" type="radio" class="radio">
+        <label name="estado-civil" for="solteiro">solteiro</label>
+        <input id="solteiro" type="radio" class="radio">
+      </div>
+      <label for="" class="label">Email</label>
+      <input type="email">
+    </fieldset>
+    <fieldset class="fieldset">
+      <legend align="right" class="legend">Endereço</legend>
+      <div class="formgroup">
+        <label for="" class="label">Rua</label>
+        <input type="text">
+      </div>
+      <div class="formgroup">
+        <label for="" class="label">Número</label>
+        <input type="number">
+      </div>
+      <div class="formgroup">
+        <label for="" class="label">Cidade</label>
+        <input type="text">
+      </div>
+    </fieldset>
+    <div class="formgroup">
+      <input type="checkbox" id="termos" class="checkbox"><label for="termos">Aceito os termos de uso</label>
+      <br>
+      <input type="checkbox" id="receber-email" class="checkbox"><label for="receber-email">Desejo receber emails</label>
+    </div>
+    <button type="submit">
+      Enviar
+    </button>
+  </form>
+</body>
+</html>
